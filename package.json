@@ -1,7 +1,7 @@
 {
   "name": "Interests",
   "version": "1.0.0",
-  "description": "",
+  "description": "Web app fo shared interests.",
   "main": "./src/js/main.js",
   "directories": {
 
