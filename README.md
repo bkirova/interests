@@ -3,7 +3,7 @@
  
 ## Installation
 
-1. `git clone git@github.com:bkirova/interests.git`
+1. `git clone https://github.com/bkirova/interests.git`
 2. `cd interests`
 3. `npm install`
 
