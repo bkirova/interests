@@ -1,14 +1,14 @@
 {
   "name": "Interests",
   "version": "1.0.0",
-  "description": "",
+  "description": "Web app fo shared interests.",
   "main": "./src/js/main.js",
   "directories": {
 
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:bkirova/interests.git"
   },
   "author": "",
   "license": "MIT",
