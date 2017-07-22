@@ -63,7 +63,5 @@
     "eslint-fix": "eslint src/js/**/*.js --fix"
   },
   "dependencies": {
-    "animejs": "^2.0.2",
-    "intrahtml": "git+https://github.com/bkirova/intraHTML.git"
   }
 }
