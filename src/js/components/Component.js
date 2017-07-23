@@ -14,17 +14,16 @@ class Component extends EventEmitter {
         * Check if user exist
         */
         _getUser() {
-
+            /* check database for currentUser */
         }
 
         /*
         * Login User
         */
         _logIn() {
-            _getUser() {
                 /*
-                * call _getUser
-                * if exist this._logIn()
+                * use this._getUser()
+                * if exist redirect to user Account page
                 * else _this._register()
                 */
             }
@@ -68,7 +67,7 @@ class Component extends EventEmitter {
         _getLatestInterest() {
             /*
             * Check database for latest interesets that matched users interesets
-            * use this._getInteresets() 
+            * this._getInteresets() usage here
             */
         }
 
