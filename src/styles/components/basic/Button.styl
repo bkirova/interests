@@ -1,0 +1,43 @@
+@import '../../variables/loader';
+
+.button-component-container
+	width: 100%
+	.button-component
+		.btn 
+			border: none;
+			color: #fff;
+			background: $accent-color
+			cursor: pointer;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-weight: 700;
+			font-size: 26
+			outline: none;
+			padding: 10px 20px
+			&:hover
+				background-color: lighten($accent-color, 10%)
+		.float
+			width: 60px
+			height: 60px
+			border-radius: 100%;
+			box-shadow: 0 3px 10px rgba(0,0,0,.23), 0 3px 10px rgba(0,0,0,.16)	
+
+		.dark
+			background: $dark-primary-color
+			&:hover
+				background-color: lighten($dark-primary-color, 10%)
+		
+		.info
+			background: #49afde
+			&:hover
+				background-color: lighten(#49afde, 10%)
+		
+		.warning
+			background: #de894a
+			&:hover
+				background-color: lighten(#de894a, 10%)
+		
+		.danger
+			background: #bc494d
+			&:hover
+				background-color: lighten(#bc494d, 10%)

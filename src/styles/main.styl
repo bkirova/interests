@@ -1,0 +1,17 @@
+@import 'variables/loader';
+
+body
+	color: $primary-text-color
+	
+.overlay
+	display: block;
+	position: fixed; /* could also be absolute */ 
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.2);
+	&.hidden
+		display: none
+		
