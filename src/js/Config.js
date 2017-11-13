@@ -11,10 +11,10 @@ module.exports = {
 	cards: [
 		{
 			id: 1,
-			tags: ['example tag'],
+			tags: ['tag'],
 			title: 'Lunch Time',
 			subtitle: 'Go to the nearest pizzaria',
-			description: 'Example Description',
+			description: 'I love working on fresh designs that. To that end, I need to freshen up my portfolio here because it does exactly the opposite.',
 			initiator: 'Borislava Kirova',
 			image: 'https://www.fitnessmagazine.com/sites/fitnessmagazine.com/files/styles/facebook_og_image/public/1200-dietitian-lunch-wide-sandwich.jpg?itok=iX50lyTD',
 			subscribers: [{
@@ -24,9 +24,9 @@ module.exports = {
 		},
 		{
 			id: 2,
-			tags: ['example tag2', 'test'],
+			tags: ['tag2', 'test'],
 			title: 'Games',
-			description: 'Make some move',
+			description: 'I love working on fresh designs that. To that end, I need to freshen up my portfolio here because it does exactly the opposite.',
 			initiator: 'Borislava Kirova',
 			image: 'https://www.residentadvisor.net/images/events/flyer/2016/2/it-0211-803721-front.jpg',
 			subscribers: [{
@@ -36,9 +36,9 @@ module.exports = {
 		},
 		{
 			id: 3,
-			tags: ['example tag2'],
+			tags: ['tag2'],
 			title: 'Games',
-			description: 'Make some move',
+			description: 'I love working on fresh designs that. To that end, I need to freshen up my portfolio here because it does exactly the opposite.',
 			initiator: 'Borislava Kirova',
 			image: 'https://cdn2.techadvisor.co.uk/cmsdata/features/3489433/witcher3_thumb800.jpg',
 			subscribers: [{
@@ -48,9 +48,9 @@ module.exports = {
 		},
 		{
 			id: 4,
-			tags: ['example tag2'],
+			tags: ['tag2'],
 			title: 'Games',
-			description: 'Make some move',
+			description: 'I love working on fresh designs that. To that end, I need to freshen up my portfolio here because it does exactly the opposite.',
 			initiator: 'Borislava Kirova',
 			image: 'http://www.allstargymandcheer.com/wp-content/uploads/2011/01/birthdays.jpg',
 			subscribers: [{
@@ -60,10 +60,10 @@ module.exports = {
 		},
 		{
 			id: 5,
-			tags: ['example tag'],
+			tags: ['tag'],
 			title: 'Monte Bianco',
 			subtitle: 'Mountain activity',
-			description: 'Example Description',
+			description: 'I love working on fresh designs that. To that end, I need to freshen up my portfolio here because it does exactly the opposite.',
 			initiator: 'Borislava Kirova',
 			image: 'http://environment.umn.edu/wp-content/uploads/2016/04/global_landscapes_initiative_directory_pages.jpg',
 			subscribers: [{
@@ -73,9 +73,9 @@ module.exports = {
 		},
 		{
 			id: 6,
-			tags: ['example tag2'],
+			tags: ['tag2'],
 			title: 'Games',
-			description: 'Make some move',
+			description: 'I love working on fresh designs that. To that end, I need to freshen up my portfolio here because it does exactly the opposite.',
 			initiator: 'Borislava Kirova',
 			image: 'https://media.timeout.com/images/101569279/image.jpg',
 			subscribers: [{
@@ -85,9 +85,9 @@ module.exports = {
 		},
 		{
 			id: 7,
-			tags: ['example tag2'],
+			tags: ['tag2'],
 			title: 'Football',
-			description: 'Make some move',
+			description: 'I love working on fresh designs that. To that end, I need to freshen up my portfolio here because it does exactly the opposite.',
 			initiator: 'Borislava Kirova',
 			image: 'http://www.delinquentidelpallone.it/wp-content/uploads/2015/06/cct-640x300.jpg',
 			subscribers: [{

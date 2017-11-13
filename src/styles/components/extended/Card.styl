@@ -1,27 +1,81 @@
 @import '../../variables/loader';
 
 .card-component-container
+	background: #fff;
 	border-radius: 5px;
-	width: 100%
+	box-shadow: 0 2px 6px rgba(0,0,0,.2)
+	font-weight: 100;
+	margin: 48px auto;
+	width: 20rem;
 	.card-component
-		width: 100%
-		background-color: #fff;
-		display: inline-block;
-		box-shadow: 0 2px 6px rgba(0,0,0,.2)
-		.image
-			width: 100%
-		.headings
-			padding: 10px
-			position: relative
-			h2
-				margin: 0;
-				color: $primary-text-color
-			h3
-				color: $secondary-text-color
-		.actions
-			padding: 10px		
-		.footer
-			padding: 10px
-			.user
-				float: right
-				color: $secondary-text-color
+		.header
+			.cover
+				.actions
+					float: right
+		.body
+			margin: 0 auto
+			width: 80%
+			.title
+				h1,
+				a
+					color: #ff4d4d
+					font-weight: 100
+				.actions
+					margin-top: 5px
+			.summary
+				p
+					color: lighten(#333, 10%)
+			.tags
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				list-style: none;
+				padding-left: 0;	
+				margin-bottom: 5px
+				div
+					margin-right: 5px	
+
+.card-component-container a {
+  color: #4d4dff;
+  text-decoration: none;
+  transition: .25s ease;
+  &:hover {
+    border-color: #ff4d4d;
+    color: #ff4d4d;
+  }
+}
+
+// Blog header
+//-------------------------
+.cover {
+  background-size: cover;
+  border-radius: 5px 5px 0 0;
+  height: 6rem;
+  box-shadow: inset hsla(0, 0, 0, .2) 0 64px 64px 16px;
+}
+
+// Blog body
+//-------------------------
+
+// Blog footer
+//-------------------------
+.footer {
+  border-top: 1px solid lighten(#333, 70%);
+  margin: 0 auto;
+  padding-bottom: .125rem;
+  width: 80%;
+}
+
+.published-date {
+  color: lighten(#333, 40%);
+  font-size: .75rem;
+  height: 1.5rem;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  white-space: nowrap;
+  padding: 20px;
+  float: right
+}

@@ -1,6 +1,7 @@
 const Client = require('./Client');
 const template = require('../templates/App.hbs');
 const TopBar = require('./components/extended/TopBar');
+const SideBar = require('./components/extended/SideBar');
 const Board = require('./components/extended/Board');
 const BottomBar = require('./components/extended/BottomBar');
 const Modal = require('./components/basic/Modal');
@@ -58,6 +59,7 @@ class App {
 		this.components.modals.settings = new SettingsModal({title: 'Settings'});
 		this.components.modals.notification = new Modal({data: {title: 'Notification'}});
 		this.components.contents.topBar = new TopBar({});
+		this.components.contents.sideBar = new SideBar({});
 		this.components.contents.board = new Board({});
 		this.components.contents.bottomBar = new BottomBar({});
 	}
@@ -128,18 +130,24 @@ class App {
 
 	_showContents() {
 		this.topBar.show();
+		this.sideBar.show();
 		this.board.show();
 		this.bottomBar.show();
 	}
 
 	_hideContents() {
 		this.topBar.hide();
+		this.sideBar.hide();
 		this.board.hide();
 		this.bottomBar.hide();
 	}
 
 	get topBar() {
 		return this.components.contents.topBar;
+	}
+
+	get sideBar() {
+		return this.components.contents.sideBar;
 	}
 
 	get board() {

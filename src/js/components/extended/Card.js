@@ -32,8 +32,8 @@ class Card extends Component {
 		if(data.subscribers) {
 			data.subscribers.forEach((data) => {
 				// TODO need component for subscriber
-				let subscriber = new Tag({label: data.name});
-				this.subscribersContainer.appendChild(subscriber.container);
+				// let subscriber = new Tag({label: data.name});
+				// this.subscribersContainer.appendChild(subscriber.container);
 			});
 		}
 

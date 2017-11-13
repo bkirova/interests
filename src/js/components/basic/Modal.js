@@ -27,7 +27,7 @@ class Modal extends Component {
 	}
 
 	_renderCancelAction() {
-		this._actions.cancel = new Button({label: 'Cancel'});
+		this._actions.cancel = new Button({label: 'Cancel', type:'dark'});
 		this.actionsContainer.appendChild(this._actions.cancel.container);
 		this._actions.cancel.on(Button.events.CLICK, () => {
 			this.hide();

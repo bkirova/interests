@@ -21,7 +21,7 @@ class SignInModal extends Modal {
 	_render() {
 		this._inputEmail = new Input({type: 'email', placeholder: 'Email'});
 		this._inputPassword = new Input({type: 'password', placeholder: 'Password'});
-		this._buttonSignIn = new Button({label: 'Sign In'});
+		this._buttonSignIn = new Button({label: 'Sign In', type:'dark'});
 
 		let container = this.container.querySelector('.modal-content');
 		container.appendChild(this._inputEmail.container);

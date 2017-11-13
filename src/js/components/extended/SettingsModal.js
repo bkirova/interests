@@ -24,7 +24,7 @@ class SettingsModal extends Modal {
 
 		this._renderCancelAction();
 
-		this._actions.save = new Button({label: 'Save'});
+		this._actions.save = new Button({label: 'Save', type:'dark'});
 		this.actionsContainer.appendChild(this._actions.save.container);
 		this._actions.save.on(Button.events.CLICK, () => {
 			this.emit(SettingsModal.events.SUCCESS);

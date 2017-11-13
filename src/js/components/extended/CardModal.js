@@ -33,10 +33,14 @@ class CardModal extends Modal {
 
 		this._renderCancelAction();
 
-		this._actions.add = new Button({label: 'Add'});
+		this._actions.add = new Button({label: 'Add', type:'dark'});
 		this.actionsContainer.appendChild(this._actions.add.container);
 		this._actions.add.on(Button.events.CLICK, () => {
-			this.emit(CardModal.events.ADD, {'title': 'static example card'});
+			this.emit(CardModal.events.ADD, {
+				title: 'static example card', 
+				image: 'https://www.residentadvisor.net/images/events/flyer/2016/2/it-0211-803721-front.jpg',
+				description: 'I love working on fresh designs that. To that end, I need to freshen up my portfolio here because it does exactly the opposite.',	
+			});
 		});
 	}
 
