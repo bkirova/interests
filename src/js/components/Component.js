@@ -68,6 +68,10 @@ class Component extends EventEmitter {
 		this.innerContainer.innerHTML = '';
 	}
 
+	get data() {
+		return this._data;
+	}
+
 }
 
 module.exports = Component;

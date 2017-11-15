@@ -31,20 +31,25 @@ class Card extends Component {
 
 		if(data.subscribers) {
 			data.subscribers.forEach((data) => {
-				// TODO need component for subscriber
-				// let subscriber = new Tag({label: data.name});
-				// this.subscribersContainer.appendChild(subscriber.container);
+				//TODO need component for subscriber
+				let subscriber = new Tag({label: data.name});
+				this.subscribersContainer.appendChild(subscriber.container);
 			});
 		}
 
-		this._buttonJoin = new Button({label: 'Join', type:'dark', icon: 'plus'});
-		this.actionsContainer.appendChild(this._buttonJoin.container);
+		if(!data.isJoined) {
+			this._buttonJoin = new Button({label: 'Join', type:'dark', icon: 'plus'});
+			this.actionsContainer.appendChild(this._buttonJoin.container);
 
-		this._buttonJoin.on(Button.events.CLICK, () => {
-			this.emit(Card.events.JOIN, this._data);
-		});
+			this._buttonJoin.on(Button.events.CLICK, () => {
+				this.emit(Card.events.JOIN, this._data);
+			});
+		}
 	}
 
+	join() {
+		this._buttonJoin.hide();
+	}
 
 	get tagsContainer() {
 		return this.container.querySelector('.tags');

@@ -13,6 +13,11 @@ class Input extends Component {
 		super({name: 'input', template, data});
 	}
 
+
+	get value() {
+		return this.container.querySelector('input').value;
+	}
+
 }
 
 module.exports = Input;

@@ -98,14 +98,16 @@ class App {
 		});
 
 		this.topBar.on(TopBar.events.SETTINGS, () => {
+			this._hideContents();
 			this.settingsModal.show();
 		});
 
 		this.board.on(Board.events.JOIN, (data) => {
 			this._client.post('join_event', {card: data, user: this._data.user});
 			this._init(true);
-			this.notifictionModal.update({title: 'sussecesss'});
-			this.notifictionModal.show();
+			//this.notifictionModal.update({title: 'sussecesss'});
+			//this.notifictionModal.show();
+			this.board.join(data);
 		});
 
 		this.board.on(Board.events.EDIT, () => {

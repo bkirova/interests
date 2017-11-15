@@ -22,7 +22,7 @@ class Board extends Component {
 	update(data) {
 		this.resetInnerContainer();
 
-		this._cards = data.cards.map((cardData) => {
+		data.cards.forEach((cardData) => {
 			let card = new Card(cardData);
 			this.innerContainer.appendChild(card.container);
 
@@ -30,8 +30,17 @@ class Board extends Component {
 				this.emit(Board.events.JOIN, data);
 			});
 
-			return card;
+			this._cards.push(card);
 		});
+
+	}
+
+	join(data) {
+		let card = this._cards.find((item) => {
+			return item.data.id = data.id;
+		});
+
+		card && card.join();
 	}
 
 }

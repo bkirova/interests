@@ -42,6 +42,7 @@ class Client {
 				Config.user = data;
 				break;
 			case 'add_event':
+				data.subscribers = [];
 				Config.cards.push(data);
 				break;
 			case 'join_event':
@@ -50,6 +51,7 @@ class Client {
 				});
 
 				event.subscribers.push(data.user);
+				event.isJoined = true;
 				break;	
 			case 'add_tag':
 				Config.tags.push(data.tag);
